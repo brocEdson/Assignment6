@@ -44,6 +44,7 @@ public class GameManager : Singleton<GameManager>
 
     public void UnloadCurrentLevel()
     {
+        Cursor.lockState = CursorLockMode.None;
         AsyncOperation ao = SceneManager.UnloadSceneAsync(currentLevelName);
         if (ao == null)
         {

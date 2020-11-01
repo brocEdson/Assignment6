@@ -233,7 +233,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -4.5}
-  m_SizeDelta: {x: 248.99, y: 64.23}
+  m_SizeDelta: {x: 248.99, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312228515
 MonoBehaviour:
@@ -273,7 +273,10 @@ MonoBehaviour:
     Click to shoot
 
     Shoot all the red boxes in
-    time to win!'
+    time to win!
+
+
+    Press P to Pause'
 --- !u!222 &312228516
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -635,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce48ead2b01fb242b009f3ea4e65905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 1000
+  mouseSensitivity: 500
   player: {fileID: 1780472113}
 --- !u!1 &1045654104
 GameObject:
@@ -1221,7 +1224,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 369.26, y: 243.4}
+  m_SizeDelta: {x: 215, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445642089
 MonoBehaviour:
@@ -1302,7 +1305,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 420.81, y: 668.9}
+  m_SizeDelta: {x: 145, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1470808528
 MonoBehaviour:
@@ -1337,7 +1340,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Targets Left: 0'
+  m_Text: 'Targets Left: 00'
 --- !u!222 &1470808529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6494,7 +6497,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -10, y: -10}
-  m_SizeDelta: {x: 229.3, y: 30}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1707891859
 MonoBehaviour:

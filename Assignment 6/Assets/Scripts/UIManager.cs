@@ -59,7 +59,8 @@ public class UIManager : MonoBehaviour
             endText.gameObject.SetActive(true);
             if(Input.GetKeyDown(KeyCode.R))
             {
-                SceneManager.LoadScene(currentScene);
+                GameManager.Instance.UnloadCurrentLevel();
+                GameManager.Instance.LoadLevel(currentScene);
             }
         }
         else
