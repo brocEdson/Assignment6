@@ -12,12 +12,13 @@ public class Target : MonoBehaviour, IDamageable
     // Start is called before the first frame update
     protected virtual void Awake()
     {
-        health = 100;
+        health = 10;
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
+        Debug.Log(health);
         if(health <= 0)
         {
             Destroy(gameObject);

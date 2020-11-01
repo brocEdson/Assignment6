@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class ShootWithRaycasts : MonoBehaviour
 {
-    public int damage = 100;
+    public int damage = 10;
     public float range = 100f;
     public float hitForce = 10f;
     public Camera cam;
