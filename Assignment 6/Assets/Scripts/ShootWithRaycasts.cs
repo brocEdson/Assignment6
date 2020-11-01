@@ -13,10 +13,16 @@ public class ShootWithRaycasts : MonoBehaviour
     public float hitForce = 10f;
     public Camera cam;
     public ParticleSystem muzzleFlash;
+    private UIManager uiMan;
+
+    private void Start()
+    {
+        uiMan = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+    }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !uiMan.ended)
         {
             Shoot();
         }
@@ -30,8 +36,13 @@ public class ShootWithRaycasts : MonoBehaviour
         {
             Debug.Log(hitInfo.transform.gameObject.name);
 
+            MovingTarget moveTarget = hitInfo.transform.gameObject.GetComponent<MovingTarget>();
             Target target = hitInfo.transform.gameObject.GetComponent<Target>();
-            if (target != null)
+            if (moveTarget != null)
+            {
+                moveTarget.TakeDamage(damage);
+            }
+            else if(target != null)
             {
                 target.TakeDamage(damage);
             }

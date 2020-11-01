@@ -1,6 +1,6 @@
 ﻿/* Broc Edson
  * Assignment 6
- * Provides abstract implementation of a target
+ * Provides a target object that can take damage
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -9,9 +9,11 @@ using UnityEngine;
 public class Target : MonoBehaviour, IDamageable
 {
     protected int health;
-    // Start is called before the first frame update
+    protected UIManager uiMan;
+
     protected virtual void Awake()
     {
+        uiMan = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         health = 10;
     }
 
@@ -21,6 +23,7 @@ public class Target : MonoBehaviour, IDamageable
         Debug.Log(health);
         if(health <= 0)
         {
+            uiMan.targetsRemaining--;
             Destroy(gameObject);
         }
     }

@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/* Broc Edson
+ * Assignment 6
+ * Provides a target object that can move and take damage
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

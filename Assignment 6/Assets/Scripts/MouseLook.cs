@@ -12,6 +12,11 @@ public class MouseLook : MonoBehaviour
     public GameObject player;
     private float verticalLookRotation = 0f;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
