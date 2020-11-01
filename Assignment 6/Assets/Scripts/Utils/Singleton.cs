@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/* Broc Edson
+ * Assignment 6
+ * Makes a game object a singleton
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
